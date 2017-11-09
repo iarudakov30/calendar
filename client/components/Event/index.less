@@ -1,0 +1,36 @@
+.event {
+  position: absolute;
+  margin-left: 10%;
+  padding: 10px;
+  border-left: 4px solid #6E9ECF;
+  background-color: #E2ECF5;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 14px;
+
+  &:hover {
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05);
+
+    .del-icon {
+      display: block;
+    }
+  }
+
+  .title {
+    font-weight: 200;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -10px;
+  }
+
+  .del-icon {
+    position: absolute;
+    right:5px;
+    top: 0;
+    display: none;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+  }
+
+}
